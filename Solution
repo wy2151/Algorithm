@@ -1,0 +1,9 @@
+# Q2 Summation
+def summation(n, term):
+    assert n >= 1
+    if n ==1:
+        return term(n)
+    else:
+        return term(n) + summation(n-1, term)
+
+summation(5, lambda x: x * x * x)
